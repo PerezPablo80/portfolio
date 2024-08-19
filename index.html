@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Software created by Pablo Perez" />
+		<meta name="author" content="pachi" />
+		<meta name="keywords" content="Development's done by me" />
+
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<link rel="stylesheet" href="./css/bootstrap-reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<title>Portfolio Pablo Pérez</title>
+	</head>
+	<body>
+		<!-- <div class="container"> -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Left Side -->
+				<div class="col-md-2 left-side sticky-left">
+					<h4>Me and my Apps</h4>
+					<div class="app-list">
+						<!-- List of apps -->
+						<div class="app-item" data-target="#myself">About myself</div>
+						<div class="app-item" data-target="#app1">App 1</div>
+						<div class="app-item" data-target="#app2">App 2</div>
+						<div class="app-item" data-target="#app3">App 3</div>
+						<!-- Add more apps as needed -->
+					</div>
+				</div>
+
+				<!-- Center Side -->
+				<div class="col-md-8 center-side">
+					<div id="mysqlf" class="app-info">
+						<h3>About myself</h3>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+						<p>Details about App 1...</p>
+					</div>
+					<div id="app1" class="app-info">
+						<h3>App 1</h3>
+						<p>Details about App 1...</p>
+					</div>
+					<div id="app2" class="app-info" style="display: none">
+						<h3>App 2</h3>
+						<p>Details about App 2...</p>
+					</div>
+					<div id="app3" class="app-info" style="display: none">
+						<h3>App 3</h3>
+						<p>Details about App 3...</p>
+					</div>
+					<!-- Add more app info sections as needed -->
+					<button class="btn btn-custom" id="add-more-info">Add More Information</button>
+				</div>
+
+				<!-- Right Side -->
+				<div class="col-md-2 right-side text-center">
+					<img src="./assets/Me.jpg" alt="Your Image" class="img-fluid rounded-circle" />
+					<h4>Pablo Pérez</h4>
+					<h6>perez.pablo@gmail.com</h6>
+					<p>I love playing with code, i love creating new stuff</p>
+					<a href="./assets/Resume.pdf" class="btn resume-btn" download>Download Resume</a>
+					<a href="./assets/CV.pdf" class="btn resume-btn" download>Descargar Currículum</a>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".app-item").click(function () {
+					$(".app-info").hide();
+					$($(this).data("target")).show();
+				});
+
+				$("#add-more-info").click(function () {
+					// Handle adding more information to the center side
+					$(".center-side").append("<p>More information added...</p>");
+				});
+			});
+		</script>
+	</body>
+</html>

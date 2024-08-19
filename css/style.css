@@ -1,0 +1,56 @@
+body {
+    background-color: #b9cad8;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.left-side, .right-side {
+	height: 100vh;
+    overflow-y: auto;
+    background-color: #007bff;
+    color: white;	
+}
+
+.left-side {
+    padding: 10px;
+}
+
+.right-side {
+    padding: 20px;
+}
+
+.center-side {
+    padding: 20px;
+    background-color: #b9cad8;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.app-item {
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.app-item:hover {
+    background-color: #0056b3;
+}
+
+.btn-custom {
+    background-color: #0056b3;
+    color: white;
+    margin-top: 20px;
+}
+
+.resume-btn {
+    background-color: #0056b3;
+    color: white;
+}
+
+.center-side-scroll {
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+}
