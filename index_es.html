@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Software created by Pablo Perez" />
+		<meta name="author" content="Pablo Perez <perez.pablo@gmail.com>" />
+		<meta name="keywords" content="Development's done by me" />
+		<link rel="icon" type="image/png" href="./assets/image.png" />
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<link rel="stylesheet" href="./css/bootstrap-reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<title>Portfolio Pablo Pérez</title>
+	</head>
+	<body>
+		<!-- <div class="container"> -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Left Side -->
+				<div class="col-12 col-md-2 left-side sticky-left">
+					<div class="text-center">
+						<button onclick="location.href='index.html'">
+							In English <img src="./assets/En.png" alt="USA" />
+						</button>
+					</div>
+					<h4>Aplicaciones creadas</h4>
+					<div class="app-list">
+						<!-- List of apps -->
+						<div class="app-item" data-target="#myself">Acerca de mí</div>
+						<div class="app-item" data-target="#app2">Tendermeter</div>
+						<div class="app-item" data-target="#app3">Ticket de servicio técnico</div>
+						<div class="app-item" data-target="#app4">Sistema de órdenes para cliente privado</div>
+						<div class="app-item" data-target="#app5">Demo de temperatura</div>
+						<!-- <div class="app-item" data-target="#app6">Demo de full stack</div> -->
+						<!-- Add more apps as needed -->
+					</div>
+				</div>
+
+				<!-- Center Side -->
+				<div class="col-12 col-md-8 center-side">
+					<div id="myself" class="app-info">
+						<div class="center">
+							<h3 class="center">
+								&nbsp;&nbsp;&nbsp;Pablo Pérez &nbsp; &nbsp;&nbsp;
+								<a href="mailto:perez.pablo@gmail.com">
+									<i class="bi bi-envelope-at-fill"></i>
+								</a>
+							</h3>
+						</div>
+						<div class="row left-side">
+							<div class="col-md-6"><img src="./assets/fullMe.jpg" height="50%" /></div>
+							<div class="col-md-6 font-two">
+								<p class="font-two">
+									Me caracterizo por buscar soluciones sencillas, a las complejidades que se presentan
+									cuando un cliente solicita un proyecto o producto. Me gusta buscar alternativas
+									interesantes a los productos solicitados, de forma de generar soluciones atractivas.
+								</p>
+								<p class="font-two">
+									Me gusta mucho desarrollar productos innovadores, con el tiempo que dispongo para
+									esto. Me gusta mucho todo lo relacionado con IoT.
+								</p>
+								<p class="font-two">
+									Dentro de los proyectos personales estoy intentando realizar un producto de medición
+									de glicemia por medio de la respiración. Es un proyecto personal pero muy complejo,
+									por lo que me apoyo en colaboradores para llevarlo a cabo.
+								</p>
+								<p class="font-two">
+									Como se podrán ver en los proyectos debajo, así como tambien en el
+									<a href="./assets/CV.pdf" class="btn resume-btn" download> Currículum</a>, tengo
+									conocimientos de:
+									<li>ReactJS</li>
+									<li>NodeJS con Express y Sequelize</li>
+									<li>Bases de datos Postgres y MySql o MariaDb</li>
+									<li>Python</li>
+									<li>HTML - CSS - JS</li>
+									<li>Php - si bien no me gusta, lo conozco y manejo con F3</li>
+									<li>C para el desarrollo con Arduino</li>
+									<li>Java</li>
+									<li>Git - para la gestión de los proyectos</li>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<p class="font-two">
+								A lo largo de este tiempo he desarrollado diferentes productos a pequeña escala para
+								clientes locales
+							</p>
+							<p class="font-two">
+								Ahora siento que es momento de buscar alternativas de mayor porte y con otro tipo de
+								complejidades.
+							</p>
+							<p class="font-two">
+								Es aquí donde comienza mi búsqueda de alternativas en formato remoto o para clientes que
+								búsquen soluciones a otro nivel
+							</p>
+						</div>
+					</div>
+
+					<div id="app2" class="app-info" style="display: none">
+						<h3>Tendermeter</h3>
+						<p class="font-two">
+							El Tendermeter es un desarrollo innovador de medición de terneza de la carne
+						</p>
+						<p class="font-two">
+							Dicho desarrollo fue realizado en Java, actualmente está hecho con un SBC Raspberry Pi 4b y
+							una pantalla LCD1602 que se conecta con un desarrollo hecho en Python. Inicialmente se
+							hicieron pruebas con Udoo v8, Udoo v3, Asus thinkerboard y hasta un Rpi2, pero por un
+							requerimiento de velocidad y disponibilidad, se terminó optando por RPi4 y potencialmente 5.
+						</p>
+						<p class="font-two">
+							Dejamos un video del prototipo, dado que no se puede presentar el proyecto finalizado aún
+							por un tema de que aún no está el dispositivo en el mercado.
+						</p>
+						<p class="font-two">La proyección es que el mismo estará a principio de 2025</p>
+						<p class="font-two">
+							Tanto el desarrollo como el diseño y arquitectura tanto de software como de hardware fue
+							realizado por quien escribe
+						</p>
+					</div>
+					<div id="app3" class="app-info" style="display: none">
+						<h3>App de Servicio técnico de Jade Informática</h3>
+						<p class="font-two">
+							Durante los ultimos años se trabajó en el desarrollo con php (framework fat free framework o
+							F3), mysql, html, CSS, js el sistema que actualmente funciona en la empresa para tickets de
+							servicios
+						</p>
+						<p class="font-two">
+							El mismo cuanta con un sistema de clientes, dispositivos asociados a los clientes, usuarios
+							y los servicios propiamente dicho
+						</p>
+						<p class="font-two">
+							El servicio se puede validar con el usuario, haciendole firmar el mismo en cualquier celular
+							con conexión a internet.
+						</p>
+						<p class="font-two">
+							Dicha validación habilita el envío de un mail al cliente, si el campo fue ingresado.
+						</p>
+						<p class="font-two">
+							Así mismo los servicios cargados nos llegan un mail con la indicación y posteriormente
+							cuando se firma o finaliza, nos envía la información para proceder a facturar dicho servicio
+							si corresponde. Los servicios son realizados por los técnicos.
+						</p>
+					</div>
+					<div id="app4" class="app-info" style="display: none">
+						<h3>Sistema de órdenes para cliente privado</h3>
+						<p class="font-two">Realizamos un sistema para un cliente privado de ordenes de compra</p>
+						<p class="font-two">
+							El mismo guarda clientes, productos y pedidos previos, con el fin de permitirle a los
+							vendedores tener los pedidos previos y los precios previamente ofrecidos
+						</p>
+						<p class="font-two">
+							El sistema fue almacenado en un servidor local, debido a limitaciones presupuestarias por
+							parte del cliente.
+						</p>
+						<p class="font-two">
+							Para el desarrollo de este producto se utilizó: ReactJS, NodeJS con sequelize y express y de
+							base de datos se usó Postgres
+						</p>
+						<p class="font-two">
+							No se pueden brindar fotos del producto debido a que es un proyecto privado. No obstante
+							esto el desarrollo fue realizado 100% por quien escribe.
+						</p>
+					</div>
+					<div id="app5" class="app-info" style="display: none">
+						<h3>Demo de temperatura</h3>
+						<p class="font-two">
+							Debido a un pedido de un portal freelance, se realizó una demo de un producto para mostrar
+							la temperatura de diferentes lugares, por medio de la conexión a una API
+						</p>
+						<p class="font-two">
+							Para esto se trabajó con ReactJS, haciendo uso de useEffect para la vinculación hacia dicha
+							API.
+						</p>
+						<p class="font-two">
+							La Api requería un token de acceso por lo que se guardó el mismo en la siguiente URL
+						</p>
+						<p class="font-two">
+							<a target="_blank" href="https://jade.com.uy/pablo_perez/weather/">Weather App</a>
+						</p>
+						<p class="font-two">En el mismo se selecciona una ciudad y muestra la información.</p>
+					</div>
+					<div id="app6" class="app-info" style="display: none">
+						<h3>Demo fullstack en Heroku</h3>
+						<p class="font-two"></p>
+					</div>
+					<!-- Add more app info sections as needed -->
+					<!-- <button class="btn btn-custom" id="add-more-info">Add More Information</button> -->
+				</div>
+
+				<!-- Right Side -->
+				<div class="col-12 col-md-2 right-side text-center">
+					<img src="./assets/Me.jpg" alt="Your Image" class="img-fluid rounded-circle" />
+					<h4>Pablo Pérez</h4>
+					<h6>perez.pablo@gmail.com</h6>
+					<p>Soy un apasionado del desarrollo de productos inteligentes.</p>
+					<p>Me gusta el desarrollo web y el backend. Pero lo que más me motiva son los productos IoT</p>
+
+					<p><a href="./assets/CV.pdf" class="btn resume-btn" download>Descargar Currículum</a></p>
+					<p><a href="./assets/Resume.pdf" class="btn resume-btn" download>Download Resume</a></p>
+					<div id="self">Más información acerca mío</div>
+				</div>
+			</div>
+			<br />
+			<!-- </div> -->
+			<div class="py-3 my-4 footer fixed-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="tel:+59899648987"> Tel:&nbsp;099.648.987</a><br />
+						<a href="https://wa.me/59899648987?text=Desde%20tu%20portfolio,%20quiero%20hablar%20contigo"
+							>Whatsapp:&nbsp;<i class="bi bi-whatsapp"></i
+						></a>
+					</div>
+					<div class="col-md-4">
+						<label>Email:</label
+						><a href="mailto:perez.pablo@gmail.com">
+							<i class="bi bi-envelope-at-fill"></i>
+							perez.pablo@gmail.com </a
+						><br />
+						<label>Git:&nbsp;</label>
+						<a href="https://github.com/PerezPablo80"><i class="bi bi-github"></i> &nbsp;GIT</a>
+					</div>
+					<div class="col-md-4">
+						<label>Ubicación:</label><i class="bi bi-geo-alt-fill"></i>&nbsp;Montevideo, Uruguay
+						<br />
+						<a href="https://www.linkedin.com/in/pablo-pérez-878155161/"
+							><i class="bi bi-linkedin"></i>&nbsp;Linkedin</a
+						>
+					</div>
+				</div>
+				<p class="text-center text-muted">2024 Desarrollo estático por Pablo Pérez</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".app-item").click(function () {
+					$(".app-info").hide();
+					$($(this).data("target")).show();
+				});
+				$("#self").click(function () {
+					if ($("#myself").is(":visible")) {
+						$("#myself").hide();
+					} else if ($("#myself").is(":hidden")) {
+						$(".app-info").hide();
+						$("#myself").show();
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

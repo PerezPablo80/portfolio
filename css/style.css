@@ -5,14 +5,26 @@ body {
     padding-top: 5px;
     padding-bottom: 2px;
 }
-
+.a {
+    color: white;
+    font-style: normal;
+}
+.a:hover {
+    color: white;
+    zoom: 1.3;
+    font-style: normal;
+}
 .left-side, .right-side {
-	height: 100vh;
+	height: 90vh;
     overflow-y: auto;
     background-color: #007bff;
     color: white;	
+    border-radius: 25px;
 }
-
+.font-two{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
 .left-side {
     padding: 10px;
 }
@@ -20,12 +32,14 @@ body {
 .right-side {
     padding: 20px;
 }
-
+.center h3{
+    text-align: center;
+}
 .center-side {
     padding: 20px;
     background-color: #b9cad8;
     overflow-y: auto;
-    height: 100vh;
+    height: 90vh;
 }
 
 .app-item {
@@ -52,5 +66,17 @@ body {
 
 .center-side-scroll {
     overflow-y: auto;
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
+}
+.footer {
+    background-color: #0056b3;
+}
+@media (max-width: 767.98px) {
+    .left-side, .right-side {
+        height: auto;
+        border-radius: 15px;
+    }
+    .center-side {
+        height: auto;
+    }
 }
