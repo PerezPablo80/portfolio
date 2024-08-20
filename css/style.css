@@ -15,7 +15,7 @@ body {
     font-style: normal;
 }
 .left-side, .right-side {
-	height: 90vh;
+	height: 70vh;
     overflow-y: auto;
     background-color: #007bff;
     color: white;	
@@ -39,7 +39,7 @@ body {
     padding: 20px;
     background-color: #b9cad8;
     overflow-y: auto;
-    height: 90vh;
+    height: 80vh;
 }
 
 .app-item {
@@ -66,9 +66,12 @@ body {
 
 .center-side-scroll {
     overflow-y: auto;
-    height: calc(90vh - 100px);
+    height: calc(80vh - 100px);
 }
 .footer {
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 4px;
     background-color: #0056b3;
 }
 @media (max-width: 767.98px) {
