@@ -35,7 +35,8 @@
 						<div class="app-item" data-target="#app3">Ticket de servicio técnico</div>
 						<div class="app-item" data-target="#app4">Sistema de órdenes para cliente privado</div>
 						<div class="app-item" data-target="#app5">Demo de temperatura</div>
-						<!-- <div class="app-item" data-target="#app6">Demo de full stack</div> -->
+						<div class="app-item" data-target="#app6">Demo de ElectronJS Parking</div>
+						<div class="app-item" data-target="#app7">Demo de full stack React + NodeJS</div>
 						<!-- Add more apps as needed -->
 					</div>
 				</div>
@@ -182,10 +183,81 @@
 							<a target="_blank" href="https://jade.com.uy/pablo_perez/weather/">Weather App</a>
 						</p>
 						<p class="font-two">En el mismo se selecciona una ciudad y muestra la información.</p>
+						<p class="font-two">
+							Para acceder al git correspondiente está ubicado en:
+							<a target="_blank" href="https://github.com/PerezPablo80/Weather">Weather git</a>
+						</p>
 					</div>
 					<div id="app6" class="app-info" style="display: none">
-						<h3>Demo fullstack en Heroku</h3>
-						<p class="font-two"></p>
+						<h3>Demo de Parking</h3>
+						<p class="font-two">
+							Debido a un cliente particular que solicitó una demo de un sistema de parking, se realizó el
+							mismo usando electronJS
+						</p>
+						<p class="font-two">
+							Dado que era una demo y que no se requería inicialmente una base de datos, el mismo se usó
+							un archivo de excel para guardar la información y para mostrar potencialmente el sistema.
+						</p>
+						<p class="font-two">
+							El sistema permite ingresar el numero de Chapa del auto, y lo ingresa al listado pendiente,
+							guardando el mismo en Excel.
+						</p>
+						<p class="font-two">
+							Al guardar en Excel se imprime en una impresora térmica un ticket con un código de barra.
+							Esto finaliza el primer proceso
+						</p>
+						<p class="font-two">
+							Luego al salir se selecciona la chapa del auto y se verifica el tiempo, se realizan los
+							cálculos
+						</p>
+						<p class="font-two">
+							Cuando el cliente abona, se guarda el pago, que puede o no coincidir con el importe final y
+							se emitiría un ticket de salida.
+						</p>
+						<p class="font-two">
+							El ticket de salida no fue realizado, pero el resto de la demo si lo fue hecha.
+						</p>
+						<p class="font-two">
+							Si bien el concepto de que el cliente puede pagar diferente de lo indica el importe parece
+							sin sentido, eso fue requerido por el cliente debido a las propinas.
+						</p>
+						<p class="font-two">
+							El cliente entiende que se puede abonar con tarjeta y la propina incluirse en el pago, lo
+							cual quería poder ser capaz de cuantificar mensualmente.
+						</p>
+						<p class="font-two">
+							Para acceder al git:
+							<a target="_blank" href="https://github.com/PerezPablo80/ParkingPrinter"
+								>git parking printer</a
+							>. El mismo es de dominio público también.
+						</p>
+					</div>
+					<div id="app7" class="app-info" style="display: none">
+						<h3>Fullstack Demo: React NodeJS (+ Express) Postgres en nube</h3>
+						<p class="font-two">
+							Debido a un comentario de un reclutador, procedimos a realizar una demo, de algo sencillo
+							pero compuesto de varios actores
+						</p>
+						<p class="font-two">
+							Se decidió realizar un generador de tareas (ToDo) de forma de mostrar el trabajo entre Base
+							de datos, backend, frontend y la integración
+						</p>
+						<p class="font-two">
+							El mismo se alacenó en git, de acceso público en:
+							<a target="_blank" href="https://github.com/PerezPablo80/todo_frontend">todo_frontend</a> y
+							en
+							<a target="_blank" href="https://github.com/PerezPablo80/todo_postgres_nodejs_react"
+								>todo_backend</a
+							>.
+						</p>
+						<p class="font-two">
+							Así mismo el producto deployado en <a href="https://vercel.com/">Vercel.com</a> (frontend) y
+							en <a target="_blank" href="https://adaptable.io/">Adaptable.io</a> (backend y database) se
+							puede visualizar en:
+							<a target="_blank" href="https://todo-frontend-nine-xi.vercel.app/"
+								>https://todo-frontend-nine-xi.vercel.app/</a
+							>
+						</p>
 					</div>
 					<!-- Add more app info sections as needed -->
 					<!-- <button class="btn btn-custom" id="add-more-info">Add More Information</button> -->
@@ -201,7 +273,7 @@
 
 					<p><a href="./assets/CV.pdf" class="btn resume-btn" download>Descargar Currículum</a></p>
 					<p><a href="./assets/Resume.pdf" class="btn resume-btn" download>Download Resume</a></p>
-					<div id="self">Más información acerca mío</div>
+					<div id="self">Más información acerca de mí</div>
 				</div>
 			</div>
 			<br />
@@ -239,7 +311,9 @@
 						>
 					</div>
 				</div>
-				<p class="text-center text-muted">2024 Desarrollo estático por Pablo Pérez</p>
+				<p class="text-center text-muted">
+					2024 Desarrollo estático por Pablo Pérez deployado en <a href="https://vercel.com">Vercel</a>
+				</p>
 			</div>
 		</div>
 		<script type="text/javascript" src="./js/jquery.js"></script>
